@@ -18,11 +18,6 @@ Quando eu não preencher nenhum campo obrigatório
 E clicar em "Finalizar compra"
 Então deve aparecer a mensagem de alerta "Preencha os campos obrigatórios, mascados com um asterisco"
 
-Cenário: Um campo com asterisco não preenchido
-Quando eu não preencher apenas um campo obrigatório
-E clicar em "Finalizar compra"
-Então deve aparecer a mensagem de alerta "Preencha os campos obrigatórios, mascados com um asterisco"
-
 Cenário: Campo e-mail preenchido de forma válida
 Quando eu inserir no campo endereço de e-mail "erika@ebac.com"
 E clicar em "Finalizar compra"

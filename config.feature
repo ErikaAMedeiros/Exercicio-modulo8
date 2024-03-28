@@ -10,24 +10,12 @@ Contexto:
 Dado que eu acesse as configurações dos produtos 
 
 Cenário: Campos obrigatórios preenchidos
-Quando eu preencher os campos cor, tamanho e quantidade 
-E clicar em "comprar"
-Então deve aparecer a mensagem de sucesso "Finalize sua compra"
+Quando deixar de preencher alguma <configuração> 
+Então Então deve aparecer uma <mensagem> de alerta
 
-Cenário: Campo "quantidade" não preenchido
-Quando eu selecionar apenas o campo cor e tamanho
-E clicar em "comprar"
-Então deve aparecer a mensagem de alerta "Selecione a quantidade de produtos"
-
-Cenário: Campo "cor" não preenchido
-Quando eu selecionar apenas o campo quantidade e tamanho
-E clicar em "comprar"
-Então deve aparecer a mensagem de alerta "Selecione a cor do seu produto"
-
-Cenário: Campo "tamanho" não preenchido
-Quando eu selecionar apenas o campo cor e quantidade
-E clicar em "comprar"
-Então deve aparecer a mensagem de alerta "Selecione o tamanho do seu produto"
+|"cor"| "Por favor, preencha o campo cor"|
+|"tamanho"| "Por favor, preencha o campo tamnaho"|
+|"Quantidade"|"Por favor, defina uma quantidade"|
 
 Cenário: Seleção de até 10 produtos
 Quando eu selecionar até 10 produtos 
